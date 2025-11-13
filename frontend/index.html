@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cloud Cost Analyzer - Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Cloud Cost Analyzer & Optimization Dashboard</h1>
+    <p class="subtitle">Demo - select resources, calculate cost, and get AI suggestions</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Resources</h2>
+      <div id="resource-list"></div>
+      <button id="add-row" class="btn">+ Add Resource</button>
+      <button id="calculate" class="btn primary">Calculate Cost</button>
+    </section>
+
+    <section class="panel">
+      <h2>Results</h2>
+      <div id="results">
+        <table id="results-table" class="table">
+          <thead>
+            <tr><th>Resource</th><th>SKU</th><th>Region</th><th>Qty</th><th>Hours/Month</th><th>Estimated Cost</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="charts">
+          <canvas id="pieChart" width="400" height="200"></canvas>
+        </div>
+
+        <div id="ai-summary" class="ai-box">
+          <h3>AI Optimization Suggestions</h3>
+          <div id="ai-text">No suggestions yet — click Calculate.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Built with Azure (AZ-900 project). Demo data only.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
