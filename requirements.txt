@@ -1,0 +1,6 @@
+flask>=2.0
+requests
+python-dotenv
+azure-core>=1.24.0
+azure-ai-openai>=1.0.0
+azure-ai-formrecognizer>=4.0.0
