@@ -1,9 +1,41 @@
 {
   "vm": {
-    "Standard_B1s": { "hourly": 0.012 },
-    "Standard_B2s": { "hourly": 0.025 }
+    "Standard_B1s": {
+      "hourly": 0.012,
+      "display": "Standard_B1s (1 vCPU, 1 GB)"
+    },
+    "Standard_B2s": {
+      "hourly": 0.025,
+      "display": "Standard_B2s (2 vCPU, 4 GB)"
+    },
+    "Standard_D2s_v3": {
+      "hourly": 0.09,
+      "display": "Standard_D2s_v3 (2 vCPU, 8 GB)"
+    }
   },
   "storage": {
-    "per_gb_month": 0.02
+    "Hot_Block_Blobs_per_GB_month": {
+      "monthly_per_gb": 0.02,
+      "display": "Blob Storage (Hot) per GB / month"
+    },
+    "Cool_Block_Blobs_per_GB_month": {
+      "monthly_per_gb": 0.01,
+      "display": "Blob Storage (Cool) per GB / month"
+    }
+  },
+  "sqldb": {
+    "Basic": {
+      "monthly": 5.0,
+      "display": "Azure SQL DB - Basic"
+    },
+    "Standard": {
+      "monthly": 30.0,
+      "display": "Azure SQL DB - Standard"
+    }
+  },
+  "region_multipliers": {
+    "eastus": 1.0,
+    "centralindia": 1.05,
+    "westus": 1.02
   }
 }
