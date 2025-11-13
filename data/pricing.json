@@ -1,0 +1,9 @@
+{
+  "vm": {
+    "Standard_B1s": { "hourly": 0.012 },
+    "Standard_B2s": { "hourly": 0.025 }
+  },
+  "storage": {
+    "per_gb_month": 0.02
+  }
+}
