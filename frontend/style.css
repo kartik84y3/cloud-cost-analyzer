@@ -1,0 +1,28 @@
+:root{
+  --azure-blue: #0078d4;
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #666;
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{
+  margin:0;background:var(--bg);color:#111;
+}
+header{
+  background:linear-gradient(90deg,var(--azure-blue),#005a9e);
+  color:white;padding:24px 20px;
+}
+header h1{margin:0;font-size:20px}
+header .subtitle{margin-top:6px;opacity:0.95;font-size:13px}
+main{max-width:1100px;margin:20px auto;padding:0 16px}
+.panel{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(13,38,63,0.06);margin-bottom:18px}
+.btn{border:0;padding:8px 12px;border-radius:8px;background:#e7eefc;color:var(--azure-blue);cursor:pointer;margin-right:8px}
+.btn.primary{background:var(--azure-blue);color:white}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{padding:8px;border-bottom:1px solid #eee;text-align:left;font-size:14px}
+.resource-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.resource-row select,input{padding:8px;border-radius:8px;border:1px solid #ddd}
+.resource-row .small{width:120px}
+.charts{max-width:600px;margin-top:12px}
+.ai-box{margin-top:12px;padding:12px;border-radius:8px;background:#fbfdff;border:1px solid #e8f3ff}
+footer{max-width:1100px;margin:0 auto;padding:8px 16px;color:var(--muted);font-size:13px}
